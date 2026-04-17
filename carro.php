@@ -9,15 +9,20 @@ class Carro {
         $this->velocidade = $velocidade;
     }
 
-    public getVelocidade(){
-        rutun $this->velocidade;
+    public function getVelocidade(){
+        return $this->velocidade;
+    }
+
+    public function getCarro(){
+        return $this->modelo;
     }
 
     protected function setVelocidade ($novaVelocidade)
     {
-        $this->veiculo =  $novaVelocidade;
-        if{
-            
+        if ($novaVelocidade >= 0 && $novaVelocidade <201){
+            $this->velocidade = $novaVelocidade;
+        }else{
+            echo "ERRO : Velocidade ultrapassou o limitede velocidade";
         }
     }
 }
