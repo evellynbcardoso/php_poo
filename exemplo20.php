@@ -17,3 +17,10 @@ class NotificadorSMS implements INotificador{
         echo "SMS enviar {$destinatario}. Mensagem: {$mensagem}.";
     }
 }
+
+// Implementar: Whatsapp
+class NotificadorWhatsapp implements INotificador{
+    public function enviar ($destinatario, $mensagem){
+        echo "Whatsapp enviado para {$}"
+    }
+}
